@@ -1,4 +1,4 @@
-image: skiafgitpodacr.azurecr.io/auth-service-template:1115
+image: skiafgitpodacr.azurecr.io/auth-service-template:1117
 tasks:
   - before: git clone https://$repoid:$repopw@dev.azure.com/SKI-DT-Infra/skiaf2.0/_git/auth-service
     init: cd auth-service
