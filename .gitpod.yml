@@ -1,6 +1,6 @@
 image: skiafgitpodacr.azurecr.io/auth-service-template:1155
 tasks:
-  - before: git clone https://$repoid:$repopw@dev.azure.com/SKI-DT-Infra/skiaf2.0/_git/auth-service
+  - before: git clone -b test/Gitpod https://$repoid:$repopw@dev.azure.com/SKI-DT-Infra/skiaf2.0/_git/auth-service
     init: cd auth-service
     command: mvn spring-boot:run
 
