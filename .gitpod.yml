@@ -1,7 +1,7 @@
 image: skiafgitpodacr.azurecr.io/auth-service-template:1155
 tasks:
-  - before: git clone -b test/Gitpod https://$repoid:$repopw@dev.azure.com/SKI-DT-Infra/skiaf2.0/_git/auth-service
-    init: cd auth-service
+  - before: cd auth-service
+    init: git clone -b test/Gitpod https://$repoid:$repopw@dev.azure.com/SKI-DT-Infra/skiaf2.0/_git/auth-service
     command: mvn spring-boot:run
 
 # List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
